@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Cita</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nueva Cita</h1>
+    </header>
+    <section id="nueva-cita">
+        <form action="/submit-cita" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required><br><br>
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required><br><br>
+            <label for="doctor">Doctor:</label>
+            <input type="text" id="doctor" name="doctor" required><br><br>
+            <label for="motivo">Motivo:</label>
+            <textarea id="motivo" name="motivo" required></textarea><br><br>
+            <input type="submit" value="Agendar Cita">
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Página de Citas Médicas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
